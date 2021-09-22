@@ -1,0 +1,127 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("../fonts/Forum-Regular.ttf") format("ttf");
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("../fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: #030303;
+}
+
+h2 {
+    font-style: normal;
+    font-size: 25px;
+    color: #030303;
+    font-weight: 600;
+    padding: 0px 50px;
+}
+
+b {
+    font-style: normal;
+    font-size: 25px;
+    color: #030303;
+    font-weight: 600;
+}
+
+.title {
+    border-bottom: 1px solid #030303; /* Линия снизу текста */
+    padding: 2% 20%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+
+.about {
+    background-color: rgba(2, 4, 5, 0.22);
+    width: 500px;
+    max-width: 500px;
+    padding: 1% 2%;
+}
+
+.photo {
+    padding: 0 22px;
+}
+
+.photo img {
+    width: 250px;
+    height: 300px;
+    border-radius: 130px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+.info_section {
+    padding: 5px;
+}
+
+.container_languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.container_experience {
+    background-color: rgba(148, 137, 137, 0.22);
+    width: 1000px;
+    max-width: 1000px;
+    padding: 1% 5%;
+}
+
+.work {
+    padding: 25px;
+}
+
+.footer {
+    background-color: rgba(2, 4, 5, 0.22);
+}
+
+.page-footer__contact-links {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #030303;
+}
